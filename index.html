@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!--Styles-->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!--Icon-->
+  <link rel="icon" href="./img/favicon.ico">
+
+  <!--IconsBootstrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <title>AFA-Asociación del Fútbol Argentino</title>
+</head>
+
+<body>
+  <header>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html"><img src="./img/logoAfa.png"
+            alt="Logo de la Asociación del Fútbol Argentino"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto gap-3">
+            <li class="nav-item">
+              <a class="nav-link" href="#">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/america.html">COPA AMERICA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/qatar.html">MUNDIAL QATAR</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/finalissima.html">FINALISSIMA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/messi.html">MESSI</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Carousel-->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-theme="dark">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active c-item">
+          <img src="./img/fotocarrusel3.jpg" class="d-block w-100 c-img"
+            alt="Imagen del carousel, camiseta de argentina enfocada en su escudo.">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/fotocarrusel1.jpg" class="d-block w-100 c-img"
+            alt="Imagen del carousel, todo el equipo de la seleccion festejando la copa del mundo.">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/fotocarrusel5.jpg" class="d-block w-100 c-img"
+            alt="Imagen del carousel, Messi besando la copa del mundo.">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+  <!--Main-->
+  <main class="main-container">
+    <section class="section-main-uno">
+      <h1 class="titulos-principales">Asociación del Fútbol Argentino</h1>
+
+      <div class="imagen-afa-principal">
+        <img src="./img/afaMain.jpg" alt="">
+      </div>
+
+      <div class="textos">
+        <p class="textos-main">
+          La Asociación del Fútbol Argentino (AFA) es el ente rector del fútbol en Argentina, encargada de
+          organizar y regular las distintas selecciones nacionales, y los campeonatos oficiales, en todas las
+          modalidades del deporte en ese país, incluidas las ramas de futsal, fútbol playa y fútbol femenino.
+          Fue fundada por Alejandro Watson Hutton en Buenos Aires, el 21 de febrero de 1893, con el nombre de
+          Argentine Association Football League, siendo la más antigua del continente, luego de la extinta
+          Argentine Association Football League de 1891, la que fue disuelta luego de un año de vida y no es
+          reconocida como su predecesora. Tras un proceso de cambio de nombres, escisiones, fusiones y
+          castellanización, adoptó en 1934 la denominación Asociación del Football Argentino y posteriormente,
+          en
+          1946, su nombre definitivo. Está afiliada a la FIFA desde 1912 y a la Conmebol, de la que es miembro
+          fundador, desde 1916.
+        </p>
+      </div>
+    </section>
+
+    <section class="section-main-dos">
+      <h3 class="subtitulos">Envía un mensaje a tu jugador o parte del cuerpo técnico favorito:</h3>
+      <!--Form-->
+      <div class="formulario">
+        <form action="" method="post">
+          <label for="" class="labels">Nombre del jugador/integrante:</label>
+          <input type="text" name="nombre" id="nombre-jugador" placeholder="Messi"><br>
+          <label for="" class="labels">Mensaje:</label><br>
+          <textarea name="mensaje-usuario" rows="5" cols="30" maxlength="250"></textarea><br>
+          <input type="submit" value="ENVIAR">
+        </form>
+      </div>
+    </section>
+
+    <section class="container-sponsors">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <h4>MAIN SPONSORS GLOBAL</h4>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col img-sponsors">
+            <a href="http://www.adidas.com.ar" target="_blank">
+              <img src="./img/Adidas.png" alt="logo de adidas">
+            </a>
+          </div>
+          <div class="col img-sponsors">
+            <a href="https://www.americanexpress.com/es-ar/" target="_blank">
+              <img src="./img/american.jpg" alt="logo de american express">
+            </a>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col">
+            <h5>SPONSORS OFICIALES SELECCIONES NACIONALES</h5>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col img-sponsors">
+            <a href="http://www.coca-cola.com.ar/" target="_blank">
+              <img src="./img/cocacola.png" alt="logo de coca-cola">
+            </a>
+          </div>
+          <div class="col img-sponsors">
+            <a href="https://www.gruposancorseguros.com/ar/es/sancor-seguros" target="_blank">
+              <img src="./img/SancorSeguros.png" alt="logo de sancor seguros">
+            </a>
+          </div>
+          <div class="col img-sponsors">
+            <a href="http://www.ypf.com/" target="_blank">
+              <img src="./img/ypf.png" alt="logo de ypf">
+            </a>
+          </div>
+          <div class="col img-sponsors">
+            <a href="http://www.cervezaschneider.com.ar/" target="_blank">
+              <img src="./img/Shneider.png" alt="logo de Shneider">
+            </a>
+          </div>
+          <div class="col img-sponsors">
+            <a href="https://betwarrior.bet.ar/" target="_blank">
+              <img src="./img/BetW.png" alt="logo de betwarrior">
+            </a>
+          </div>
+          <div class="col img-sponsors">
+            <a href="https://bc.game/" target="_blank">
+              <img src="./img/bc.games.png" alt="logo de bcgame">
+            </a>
+          </div>
+          <div class="col img-sponsors">
+            <a href="https://zanella.com.ar/" target="_blank">
+              <img src="./img/ZanellaWh.png" alt="logo de zanella">
+            </a>
+          </div>
+          <div class="col img-sponsors">
+            <a href="https://www.cotticoffee.com" target="_blank">
+              <img src="./img/coffeLogo.png" alt="logo de cotti coffee">
+            </a>
+          </div>
+          <div class="col img-sponsors">
+            <a href="https://www.bna.com.ar/Personas" target="_blank">
+              <img src="./img/BNA.png" alt="logo de banco nacion">
+            </a>
+          </div>
+          <div class="col img-sponsors">
+            <a href="https://www.paninistore.com/" target="_blank">
+              <img src="./img/panini.png" alt="logo de panini">
+            </a>
+          </div>
+          <div class="col img-sponsors">
+            <a href="https://www.naldo.com.ar/" target="_blank">
+              <img src="./img/naldo.jpg" alt="logo de naldo">
+            </a>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col">
+            <h5>SPONSORS DIGITALES</h5>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col img-sponsors">
+            <a href="http://www.cervezaschneider.com.ar/" target="_blank">
+              <img src="./img/Shneider.png" alt="logo de Shneider">
+            </a>
+          </div>
+          <div class="col img-sponsors">
+            <a href="https://www.mcdonalds.com.ar/" target="_blank">
+              <img src="./img/Mcdonalds.png" alt="logo de Mcdonalds">
+            </a>
+          </div>
+          <div class="col img-sponsors">
+            <a href="https://www.pedidosya.com.ar/" target="_blank">
+              <img src="./img/PedidosYa.png" alt="logo de pedidos ya">
+            </a>
+          </div>
+          <div class="col img-sponsors">
+            <a href="https://www.aerolineas.com.ar/" target="_blank">
+              <img src="./img/Aerolineas_new.png" alt="logo de aerolineas argentinas">
+            </a>
+          </div>
+          <div class="col img-sponsors">
+            <a href="https://www.fanatics.com/" target="_blank">
+              <img src="./img/fanatics.png" alt="logo de fanatics">
+            </a>
+          </div>
+          <div class="col img-sponsors">
+            <a href="https://www.smartsoftgaming.com/" target="_blank">
+              <img src="./img/smartsoft.png" alt="logo de smart soft gaming">
+            </a>
+          </div>
+          <div class="col img-sponsors">
+            <a href="https://www.assistcard.com/ar" target="_blank">
+              <img src="./img/assist-card.png" alt="logo de assist card">
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h5>SPONSORS REGIONALES</h5>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col img-sponsors">
+            <a href="https://www.yili.com/cms/index" target="_blank">
+              <img src="./img/Yili.png" alt="logo de Yili">
+            </a>
+          </div>
+          <div class="col img-sponsors">
+            <a href="https://www.panpanfood.com/" target="_blank">
+              <img src="./img/PanPan.png" alt="logo de Pan pan food">
+            </a>
+          </div>
+          <div class="col img-sponsors">
+            <a href="https://duelbits.com/" target="_blank">
+              <img src="./img/Duel-Bits.png" alt="logo de Duel bits">
+            </a>
+          </div>
+          <div class="col img-sponsors">
+            <a href="http://www.amul.com/" target="_blank">
+              <img src="./img/Amul_new.png" alt="logo de Amul">
+            </a>
+          </div>
+          <div class="col img-sponsors">
+            <a href="https://www.mashreqbank.com/en/uae/personal" target="_blank">
+              <img src="./img/Mashreq.jpg" alt="logo de Mashreq">
+            </a>
+          </div>
+          <div class="col img-sponsors">
+            <a href="https://www.tataconsumer.com/brands/water/tata-gluco-plus" target="_blank">
+              <img src="./img/tata.png" alt="logo de Tata gluco plus">
+            </a>
+          </div>
+          <div class="col img-sponsors">
+            <a href="https://www.dafabetofficial.com/en/" target="_blank">
+              <img src="./img/dafabet.png" alt="logo de Dafabet">
+            </a>
+          </div>
+          <div class="col img-sponsors">
+            <a href="https://www.bkash.com/en/about" target="_blank">
+              <img src="./img/bKash.png" alt="logo de Bkash">
+            </a>
+          </div>
+          <div class="col img-sponsors">
+            <a href="https://www.mi.com/in/" target="_blank">
+              <img src="./img/Mi.png" alt="logo de Mi">
+            </a>
+          </div>
+          <div class="col img-sponsors">
+            <a href="https://www.xtrendspeed.com/es-ES" target="_blank">
+              <img src="./img/xtrend.png" alt="logo de xtrendspeed">
+            </a>
+          </div>
+          <div class="col img-sponsors">
+            <a href="https://www.itcportal.com/" target="_blank">
+              <img src="./img/Enduring.png" alt="logo de itcportal">
+            </a>
+          </div>
+          <div class="col img-sponsors">
+            <a href="https://www.ala.com.ar/home.html" target="_blank">
+              <img src="./img/ala.png" alt="logo de Ala">
+            </a>
+          </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+          <div class="col img-sponsors">
+            <h6>
+              VIDEOGAME PARTNER OFICIAL  
+            </h6>
+            <a href="https://www.konami.com/games/eu/es/" target="_blank">
+              <img src="./img/Konami_red.png" alt="logo de Konami">
+            </a>
+          </div>
+          <div class="col img-sponsors">
+            <h6>
+              FAN TOKEN OFICIAL
+            </h6>
+            <a href="https://www.socios.com/" target="_blank">
+              <img src="./img/Socios.Com.png" alt="logo de Socios com">
+            </a>
+          </div>
+          <div class="col img-sponsors">
+            <h6>
+              SOCIO COMERCIAL
+            </h6>
+            <a href="https://mundoseleccion.com/" target="_blank">
+              <img src="./img/MundoSeleccion.png" alt="logo de Mundo Seleccion">
+            </a>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col">
+              <h4>PROVEEDORES OFICIALES</h4>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col img-sponsors">
+              <a href="http://www.easy.com.ar/" target="_blank">
+                <img src="./img/Easy.png" alt="logo de Easy">
+              </a>
+            </div>
+            <div class="col img-sponsors">
+              <a href="http://www.bonaqua.com.ar/" target="_blank">
+                <img src="./img/BonAqua_New.png" alt="logo de Bonaqua">
+              </a>
+            </div>
+            <div class="col img-sponsors">
+              <a href="http://www.powerade.com.ar/es/home/" target="_blank">
+                <img src="./img/Powerade.png" alt="logo de Powerade">
+              </a>
+            </div>
+            <div class="col img-sponsors">
+              <a href="https://www.noblex.com.ar/" target="_blank">
+                <img src="./img/noblex.png" alt="logo de Noblex">
+              </a>
+            </div>
+            <div class="col img-sponsors">
+              <a href="https://www.gillette.com.ar/es-ar" target="_blank">
+                <img src="./img/Gillette.png" alt="logo de Gillette">
+              </a>
+            </div>
+      </div>
+    </section>
+  </main>
+  <!--Footer-->
+  <footer>
+    <div class="direcciones-footer">
+      <span>BA</span>
+      <p>Sede Social: Viamonte 1366, (C1053ACB)
+        <br>
+        Ciudad Autónoma de Buenos Aires
+        <br>
+        Teléfono: + 54 11 4370-7900
+      </p>
+    </div>
+    <div class="direcciones-footer">
+      <span>EZE</span>
+      <p>Predio de Ezeiza: Autopista Ricchieri y
+        <br>
+        Enrique Fernández Garcia, (1802), Ezeiza, Provincia de Buenos Aires
+        <br>
+        Teléfono: + 54 4480-9393
+      </p>
+    </div>
+    <div class="redes-sociales">
+      <ul>
+        <li class="tit-redes">Redes Sociales</li>
+        <li><a href="https://www.instagram.com/afa.oficial/" class="enlaces" target="_blank"><i
+              class="bi bi-instagram">Instagram</i></a></li>
+        <li><a href="https://www.facebook.com/AFAOFICIAL/" class="enlaces" target="_blank"><i
+              class="bi bi-facebook">Facebook</i></a></li>
+        <li><a href="https://twitter.com/AFA" class="enlaces" target="_blank"><i
+              class="bi bi-twitter-x">Twitter-x</i></a></li>
+        <li><a href="https://www.youtube.com/user/AFAOficial" class="enlaces" target="_blank"><i
+              class="bi bi-youtube">Youtube</i></a></li>
+      </ul>
+    </div>
+    <div class="copyright">
+      <p>Copyright © 2024. Facundo Merlo. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!--Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
