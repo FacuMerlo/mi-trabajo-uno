@@ -1,0 +1,31 @@
+//Base
+@import './base/reset';
+@import './base/titulos-subtitu';
+@import './base/textos';
+@import './base/secciones';
+
+
+//Layouts
+@import'./layouts/header';
+@import './layouts/main';
+@import './layouts/seccion-uno-home';
+@import './layouts/seccion-dos-home';
+@import './layouts/seccion-sponsors';
+@import './layouts/seccion-uno-america';
+@import './layouts/seccion-dos-america';
+@import './layouts/seccion-uno-qatar';
+@import './layouts/seccion-dos-qatar';
+@import './layouts/seccion-uno-finalissima';
+@import './layouts/seccion-dos-finalissima';
+@import './layouts/seccion-uno-messi';
+@import './layouts/seccion-dos-messi';
+@import './layouts/footer';
+//MediaQueries
+@import './layouts/media500';
+
+//Components
+@import './components/galeria-fotos-qatar';
+
+
+
+
