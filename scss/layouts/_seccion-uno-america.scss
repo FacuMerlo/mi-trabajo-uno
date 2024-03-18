@@ -1,8 +1,12 @@
+@mixin widthAndMargin{
+    width: 100%;
+    margin-top: 1rem;
+}
+
 .imagen-copa-america {
-    width: 80%;
-    margin: 2rem auto;
-    img{
-        width: 100%;
-        margin-top: 1rem;
+    @include sizesAndMargin(80%, 2rem auto);
+
+    img {
+        @include widthAndMargin();
     }
 }

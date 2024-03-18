@@ -62,7 +62,7 @@ body {
   color: #FFFFFF;
   font-family: "Roboto", sans-serif;
   font-size: 25px;
-  transition: all 300ms;
+  transition: all 300ms ease-in;
   text-align: center;
   border-radius: 10px;
 }
@@ -117,11 +117,11 @@ main {
   margin-top: 1rem;
 }
 
-.iframe-copa-america {
+.iframe-copa-america, .video-messi-highlights, .iframe-finalissima, .iframe-qatar {
   display: flex;
   justify-content: center;
 }
-.iframe-copa-america iframe {
+.iframe-copa-america iframe, .video-messi-highlights iframe, .iframe-finalissima iframe, .iframe-qatar iframe {
   width: 40rem;
   margin-top: 2rem;
 }
@@ -135,15 +135,6 @@ main {
   margin-top: 1rem;
 }
 
-.iframe-qatar {
-  display: flex;
-  justify-content: center;
-}
-.iframe-qatar iframe {
-  display: flex;
-  justify-content: center;
-}
-
 .imagen-finalissima {
   width: 70%;
   margin: 2rem auto;
@@ -151,14 +142,6 @@ main {
 .imagen-finalissima img {
   width: 100%;
   margin-top: 1rem;
-}
-
-.iframe-finalissima {
-  display: flex;
-  justify-content: center;
-}
-.iframe-finalissima iframe {
-  width: 40rem;
 }
 
 .imagen-messi-festejo {
@@ -186,15 +169,6 @@ main {
 .imagen-estadisticas-total img {
   width: 100%;
   margin-top: 1rem;
-}
-
-.video-messi-highlights {
-  display: flex;
-  justify-content: center;
-}
-.video-messi-highlights iframe {
-  width: 40rem;
-  margin-top: 2rem;
 }
 
 footer {
@@ -240,7 +214,6 @@ footer .redes-sociales ul li {
   padding: 0;
 }
 footer .redes-sociales ul li .enlaces {
-  color: #FFFFFF;
   text-decoration: none;
 }
 footer .redes-sociales ul li .enlaces .bi-instagram {
@@ -308,6 +281,44 @@ footer .copyright p {
   margin: 1rem;
 }
 
+@keyframes animacionOnceInicial {
+  0% {
+    box-shadow: 1px -2px 82px 0px rgba(255, 255, 255, 0.2);
+  }
+  25% {
+    box-shadow: 0 0 30px rgba(252, 209, 22, 0.3);
+  }
+  50% {
+    box-shadow: 1px -2px 129px 0px rgba(252, 209, 22, 0.4);
+  }
+  75% {
+    box-shadow: 0 0 30px rgba(252, 209, 22, 0.3);
+  }
+  100% {
+    box-shadow: 1px -2px 129px 0px rgba(117, 170, 219, 0.4);
+  }
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 25%);
+  place-content: center;
+  margin: 3rem auto;
+  width: 60%;
+  gap: 1rem;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  animation-name: animacionOnceInicial;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 8s;
+  animation-delay: 0s;
+}
+
 @media only screen and (max-width: 500px) {
   .titulos-principales {
     font-size: 1.2rem;
@@ -329,6 +340,9 @@ footer .copyright p {
     width: 90%;
     gap: 0.5rem;
   }
+  .grid-container .grid-item img {
+    animation-name: none;
+  }
   .imagen-finalissima {
     width: 90%;
   }
@@ -347,21 +361,6 @@ footer .copyright p {
   .imagen-messi-festejo {
     width: 90%;
   }
-}
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 25%);
-  place-content: center;
-  margin: 3rem auto;
-  width: 60%;
-  gap: 1rem;
-}
-
-.grid-item img {
-  width: 100%;
-  height: 100%;
-  border-radius: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,9 +1,7 @@
 .imagen-finalissima {
-    width: 70%;
-    margin: 2rem auto;
+    @include sizesAndMargin(70%, 2rem auto);
 
     img {
-        width: 100%;
-        margin-top: 1rem;
+        @include widthAndMargin();
     }
 }

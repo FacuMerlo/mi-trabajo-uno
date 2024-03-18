@@ -1,9 +1,7 @@
 .imagen-festejos-qatar {
-    width: 80%;
-    margin: 1rem auto;
+    @include sizesAndMargin(80%, 1rem auto);
 
     img {
-        width: 100%;
-        margin-top: 1rem;
+        @include widthAndMargin();
     }
 }

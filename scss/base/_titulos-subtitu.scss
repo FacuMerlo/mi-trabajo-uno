@@ -2,14 +2,14 @@
     width: 100%;
     font-size: 2rem;
     text-align: center;
-    font-family: 'Sixtyfour', sans-serif;
-    color: #FFFFFF;
+    font-family: $letra-titulos;
+    color: $color-letra-titu;
 }
 
 .subtitulos {
     width: 100%;
     font-size: 2rem;
-    color: #C7D989;
-    font-family: 'Anton', sans-serif;
+    color: $color-letra-subtitu;
+    font-family: $letra-subtit;
     text-align: center;
 }

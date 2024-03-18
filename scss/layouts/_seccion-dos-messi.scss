@@ -19,11 +19,5 @@
 }
 
 .video-messi-highlights {
-    display: flex;
-    justify-content: center;
-
-    iframe {
-        width: 40rem;
-        margin-top: 2rem;
-    }
+    @extend .iframe-copa-america;
 }

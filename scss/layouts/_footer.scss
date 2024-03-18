@@ -1,7 +1,15 @@
-//FOOTER
+//VariablesFooter
+$color-fondo-footer: #042240;
+$color-fondo-redes: #0f3966;
+$tamaño-tit-redes: 2rem;
+$color-letra-redes: #0D0D0D;
+$color-letra-redes-hover: #FFFFFF;
+$color-letra-copy: #FFFFFF;
 
+
+//FOOTER
 footer {
-    background-color: #042240;
+    background-color: $color-fondo-footer;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -29,7 +37,7 @@ footer {
     }
 
     .redes-sociales {
-        background-color: #0f3966;
+        background-color: $color-fondo-redes;
         margin: 1rem;
         border-radius: 5px;
 
@@ -37,77 +45,83 @@ footer {
             padding: 0;
 
             .tit-redes {
-                font-size: 2rem;
+                font-size: $tamaño-tit-redes;
             }
 
             li {
                 list-style-type: none;
                 margin: 1rem;
-                color: #FFFFFF;
+                color: $color-letra-redes-hover;
                 text-align: center;
                 padding: 0;
 
                 .enlaces {
-                    color: #FFFFFF;
                     text-decoration: none;
 
-                    .bi-instagram{
+                    .bi-instagram {
                         text-align: center;
                         font-size: 25px;
-                        color: #0D0D0D;
+                        color: $color-letra-redes;
                         margin: 20px;
                         border-radius: 50%;
                         padding: 15px;
                         box-shadow: 0px 5px 10px rgb(0, 0, 0, .35);
                         transition: .3s ease;
-                        &:hover{
-                            background-image: linear-gradient(#f9ce34,#ee2a7b,#6228d7);
-                            color: #FFFFFF;
+
+                        &:hover {
+                            background-image: linear-gradient(#f9ce34, #ee2a7b, #6228d7);
+                            color: $color-letra-redes-hover;
                             box-shadow: 0 0 5px #6228d7;
                         }
                     }
-                    .bi-facebook{
+
+                    .bi-facebook {
                         text-align: center;
                         font-size: 25px;
-                        color: #0D0D0D;
+                        color: $color-letra-redes;
                         margin: 20px;
                         border-radius: 50%;
                         padding: 15px;
                         box-shadow: 0px 5px 10px rgb(0, 0, 0, .35);
                         transition: .3s ease;
-                        &:hover{
+
+                        &:hover {
                             background-color: #0861F2;
-                            color: #FFFFFF;
+                            color: $color-letra-redes-hover;
                             box-shadow: 0 0 5px #0861F2;
                         }
                     }
-                    .bi-twitter-x{
+
+                    .bi-twitter-x {
                         text-align: center;
                         font-size: 25px;
-                        color: #0D0D0D;
+                        color: $color-letra-redes;
                         margin: 20px;
                         border-radius: 50%;
                         padding: 15px;
                         box-shadow: 0px 5px 10px rgb(0, 0, 0, .35);
                         transition: .3s ease;
-                        &:hover{
+
+                        &:hover {
                             background-color: #000000;
-                            color: #FFFFFF;
+                            color: $color-letra-redes-hover;
                             box-shadow: 0 0 5px #000000;
                         }
                     }
-                    .bi-youtube{
+
+                    .bi-youtube {
                         text-align: center;
                         font-size: 25px;
-                        color: #0D0D0D;
+                        color: $color-letra-redes;
                         margin: 20px;
                         border-radius: 50%;
                         padding: 15px;
                         box-shadow: 0px 5px 10px rgb(0, 0, 0, .35);
                         transition: .3s ease;
-                        &:hover{
+
+                        &:hover {
                             background-color: #FF0000;
-                            color: #FFFFFF;
+                            color: $color-letra-redes-hover;
                             box-shadow: 0 0 5px #FF0000;
                         }
                     }
@@ -118,7 +132,7 @@ footer {
 
     .copyright {
         p {
-            color: #FFFFFF;
+            color: $color-letra-copy;
             margin: 1rem;
         }
     }

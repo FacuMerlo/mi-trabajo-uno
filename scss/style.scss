@@ -1,3 +1,11 @@
+//Variables
+$letra-titulos: 'Sixtyfour', sans-serif;
+$color-letra-titu: #FFFFFF;
+$letra-subtit: 'Anton', sans-serif;
+$color-letra-subtitu: #C7D989;
+$letra-textos: 'Roboto', sans-serif;
+$color-letra-textos: #FFFFFF;
+
 //Base
 @import './base/reset';
 @import './base/titulos-subtitu';
@@ -20,12 +28,9 @@
 @import './layouts/seccion-uno-messi';
 @import './layouts/seccion-dos-messi';
 @import './layouts/footer';
-//MediaQueries
-@import './layouts/media500';
 
 //Components
 @import './components/galeria-fotos-qatar';
 
-
-
-
+//MediaQueries
+@import './layouts/media500';

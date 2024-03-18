@@ -1,11 +1,14 @@
-//Formulario
+//Variables
+$color-letra-labels: #FFFFFF;
 
+//Formulario
 .formulario {
     display: flex;
     justify-content: center;
     text-align: left;
     margin-top: 2rem;
+
     .labels {
-        color: #FFFFFF;
+        color: $color-letra-labels;
     }
 }
