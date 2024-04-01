@@ -1,10 +1,5 @@
 //Variables
-$letra-titulos: 'Sixtyfour', sans-serif;
-$color-letra-titu: #FFFFFF;
-$letra-subtit: 'Anton', sans-serif;
-$color-letra-subtitu: #C7D989;
-$letra-textos: 'Roboto', sans-serif;
-$color-letra-textos: #FFFFFF;
+@import './layouts/variables-global';
 
 //Base
 @import './base/reset';
